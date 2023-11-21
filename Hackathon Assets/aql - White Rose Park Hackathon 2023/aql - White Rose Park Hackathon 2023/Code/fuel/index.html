@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fuel Level - aql / White Rose Park Hackathon 2023</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/",
+					"three-v140": "https://unpkg.com/three@0.140.0/build/three.module.js",
+					"GraphBar": "./js/src/com/aql/three/objects/GraphBar.js",
+					"KeyControl": "./js/src/com/aql/three/utils/KeyControl.js"
+                }
+            }
+        </script>          
+	</head>
+	<body class="m-0">
+		<header class="relative overflow-hidden h-[350px]">
+			<div id="js-header-canvas" class="absolute w-full h-full"></div>
+			<div class="absolute w-full h-full">
+				<div class="flex items-center justify-center w-full h-full">
+					<img src="images/logo.svg" width="628" height="215">
+				</div>
+			</div>
+		</header>
+		<script type="module" src="js/main.js"></script>
+		<main id="fuel" class="relative overflow-hidden h-[650px]">
+			<div class="absolute left-1/2 translate-x-[-50%] h-[750px] top-[-90px]">
+				<div id="js-scene-wrapper" class="relative w-[1024px]">
+					<div class="scene-bg absolute w-full h-full z-0"></div>
+					<canvas id="js-scene-canvas" class="h-[1024px]"></canvas>
+					<img class="block absolute left-1/2 translate-x-[-326px] top-1/2 translate-y-[-137px]" src="images/illustrations/fuel-lines.svg" width="145" height="256">
+				</div>
+			</div>
+		</main>
+		<footer class="flex flex-col text-[#707070] font-sans mb-[20px]">
+			<p class="flex justify-center text-[14px]"><a class="text-[#2869B0] font-bold hover:underline" href="https://core.aql.com" target="_blank">aql Core</a></p>
+			<p class="flex justify-center text-[13px]">Salem Chapel, Hunslet Road, Leeds LS10 1JW</p>
+			<p class="flex justify-center text-[13px]"><a href="tel:01133203040" class="hover:underline">0113 320 3040</a></p>
+			<p class="flex justify-center text-[13px]">© aql 2023</p>
+		</footer>
+	</body>
+</html>

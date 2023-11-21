@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Example Assets - aql / White Rose Park Hackathon 2023</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script src="https://cdn.tailwindcss.com"></script>
+        <script src="./js/main.js" defer></script>
+	</head>
+	<body class="m-0">
+
+        <!-- Fuel Gauge -->
+        <section class="fuel-gauge-wrapper">
+            <div class="fuel-gauge-content">
+                <img class="fuel-gauge" src="images/fuel-gauge.svg" />
+                <img class="fuel-pointer" src="images/fuel-pointer.svg" />
+            </div>
+            <div class="readings-wrapper">
+                <h2>Fuel Level</h2>
+                <p><span id="fuel-level"></span>%</p>
+                <form>
+                    <label>Time of Day</label>
+                    <select id="fuelTime">
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!-- Water Gauge -->
+        <section class="water-gauge-wrapper">
+            <div class="water-gauge-content">
+                <img class="water-gauge" src="images/bathtub.svg" />
+                <span id="bath-level"></span>
+            </div>
+            <div class="readings-wrapper">
+                <h2>water Level</h2>
+                <p><span id="water-level"></span>%</p>
+                <form>
+                    <label>Time of Day</label>
+                    <select id="waterTime">
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!-- Temperature Gauge -->
+        <section class="temperature-gauge-wrapper">
+            <div class="temperature-gauge-content">
+                <img class="temperature-gauge" src="images/thermometer.svg" />
+                <span id="temp-level"></span>
+            </div>
+            <div class="readings-wrapper">
+                <h2>temperature Level</h2>
+                <p><span id="temperature-level"></span>C</p>
+                <form>
+                    <label>Time of Day</label>
+                    <select id="temperatureTime">
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!-- Light Gauge -->
+        <section class="light-gauge-wrapper">
+            <div class="light-gauge-content">
+                <img class="light-gauge" src="images/light-bulb.svg" />
+                <span id="bulb-level"></span>
+            </div>
+            <div class="readings-wrapper">
+                <h2>light Level</h2>
+                <p><span id="light-level"></span>Lux</p>
+                <form>
+                    <label>Time of Day</label>
+                    <select id="lightTime">
+                    </select>
+                </form>
+            </div>
+        </section>     
+
+        <!-- House -->
+        <div id="house-wrap">
+            <div class="room-wrap">
+                <div id="bedroom" class="room">
+                    <!-- <section class="light-gauge-wrapper">
+                        <div class="light-gauge-content">
+                            <img class="light-gauge" src="images/light-bulb.svg" />
+                            <span id="bulb-level"></span>
+                        </div>
+                        <div class="readings-wrapper">
+                            <h2>light Level</h2>
+                            <p><span id="light-level"></span>Lux</p>
+                            <form>
+                                <label>Time of Day</label>
+                                <select id="lightTime">
+                                </select>
+                            </form>
+                        </div>
+                    </section> -->
+                </div>
+                <div id="bathroom" class="room">
+                    <!-- <section class="water-gauge-wrapper">
+                        <div class="water-gauge-content">
+                            <img class="water-gauge" src="images/bathtub.svg" />
+                            <span id="bath-level"></span>
+                        </div>
+                        <div class="readings-wrapper">
+                            <h2>water Level</h2>
+                            <p><span id="water-level"></span>%</p>
+                            <form>
+                                <label>Time of Day</label>
+                                <select id="waterTime">
+                                </select>
+                            </form>
+                        </div>
+                    </section> -->
+                </div>
+                <div id="garage" class="room">
+                    <!-- <section class="fuel-gauge-wrapper">
+                        <div class="fuel-gauge-content">
+                            <img class="fuel-gauge" src="images/fuel-gauge.svg" />
+                            <img class="fuel-pointer" src="images/fuel-pointer.svg" />
+                        </div>
+                        <div class="readings-wrapper">
+                            <h2>Fuel Level</h2>
+                            <p><span id="fuel-level"></span>%</p>
+                            <form>
+                                <label>Time of Day</label>
+                                <select id="fuelTime">
+                                </select>
+                            </form>
+                        </div>
+                    </section> -->
+                </div>
+                <div id="livingroom" class="room">
+                    <!-- <section class="temperature-gauge-wrapper">
+                        <div class="temperature-gauge-content">
+                            <img class="temperature-gauge" src="images/thermometer.svg" />
+                            <span id="temp-level"></span>
+                        </div>
+                        <div class="readings-wrapper">
+                            <h2>temperature Level</h2>
+                            <p><span id="temperature-level"></span>C</p>
+                            <form>
+                                <label>Time of Day</label>
+                                <select id="temperatureTime">
+                                </select>
+                            </form>
+                        </div>
+                    </section> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

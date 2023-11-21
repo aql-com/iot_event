@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url('../images/icon-arrow-down.svg');
+    background-position: calc(100% - 7px) center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+}

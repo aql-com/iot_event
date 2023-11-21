@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;500;700&display=swap');
+
+.scene-bg {
+    background: transparent url('../images/illustrations/air-quality-bg.svg') no-repeat 50% 50%;
+    background-size: 70%;
+}
+
+.date-time-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    width: 175px;
+}
+
+.date-time-wrapper img {
+    max-width: 80%;
+    margin-bottom: 5px;
+}
+
+#js-digital-clock {
+    font-size: 27px;
+}
+
+.js-smog-part-1 {
+    top: 38px;
+    left: 10px;
+}
+
+.js-smog-part-2 {
+    top: 159px;
+    left: 190px;
+}
+
+.js-smog-part-3 {
+    top: 127px;
+    left: -82px;
+}
+
+.js-smog-part-4 {
+    top: 40px;
+    left: 93px;
+}
+
+.js-smog-part-5 {
+    top: 109px;
+    left: 31px;
+}
+
+.js-smog-part-6 {
+    top: 69px;
+    left: 201px;
+}
+
+.js-smog-part-7 {
+    top: 126px;
+    left: 0px;
+}
+
+.js-smog-part-8 {
+    top: 17px;
+    left: 148px;
+}
+
+.js-smog-part-9 {
+    top: -5px;
+    left: -102px;
+}
+
+.js-smog-part-10 {
+    top: 73px;
+    left: -29px;
+}
+
+.js-smog-part-11 {
+    top: 151px;
+    left: 217px;
+}
+
+.js-smog-part-12 {
+    top: -42px;
+    left: -8px;
+}
+
+.js-smog-part-13 {
+    top: 164px;
+    left: 60px;
+}
+
+.js-cars-image-full {
+    top: 210px;
+}
+
+.js-cars-image-half-full {
+    top: 210px;
+    left: 0px;
+}

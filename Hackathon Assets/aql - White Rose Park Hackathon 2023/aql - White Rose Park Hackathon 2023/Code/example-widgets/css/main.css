@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    font-family: 'Roboto';
+}
+
+:root {
+    --fuelLevel: 0deg;
+    --lightLevel: 0;
+    --temperature: 0%;
+    --waterLevel: 0%;
+  }
+
+header {
+    background-image: url(https://aql.com/wp-content/uploads/2023/11/hackathon-iot-background.png);
+    background-size: contain;
+}
+
+main {
+    padding: 60px;
+}
+
+.readings-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    width: 175px;
+}
+
+.readings-wrapper form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.readings-wrapper p {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.readings-wrapper h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+select {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#house-wrap .readings-wrapper {
+    padding: 7px;
+    border-radius: 5px;
+    width: 85px;
+}
+
+#house-wrap .readings-wrapper h2, #house-wrap .readings-wrapper p, #house-wrap label {
+    display: none;
+}
+
+#house-wrap form {
+    margin-bottom: 0;
+}
+
+/* Fuel gauge */
+.fuel-gauge-wrapper {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.fuel-gauge-content {
+    position: relative;
+    width: fit-content;
+}
+
+.fuel-gauge-wrapper img {
+    display: block;
+}
+
+.fuel-pointer {
+    position: absolute;
+    bottom: 43%;
+    left: 53%;
+    display: block;
+    translate: -85%;
+    transform: rotate(calc(var(--fuelLevel) - 110deg));
+    transform-origin: bottom center;
+    width: 10%;
+}
+
+#house-wrap .fuel-gauge-wrapper {
+    width: 25%;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+
+#house-wrap .fuel-gauge-content {
+    width: 100%;
+}
+
+#house-wrap .fuel-gauge-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#house-wrap .fuel-pointer {
+    width: 12%;
+}
+
+/* Light gauge */
+.light-gauge-content {
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.light-gauge-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.light-gauge {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#bulb-level {
+    width: 100%;
+    display: block;
+    height: 300px;
+    opacity: var(--lightLevel);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(225,229,55);
+    background: radial-gradient(circle, rgba(225,229,55,1) 53%, rgba(202,213,63,0.1) 66%);
+    z-index: 0;
+    border-radius: 100%;
+}
+
+#house-wrap .light-gauge-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    height: 50%;
+    left: 10%;
+}
+
+#house-wrap .light-gauge-content {
+    height: 100%;
+}
+
+#house-wrap .light-gauge {
+    height: 100%;
+    width: auto;
+}
+
+#house-wrap #bulb-level {
+    height: 40;
+}
+
+/* Water gauge */
+
+.water-gauge-content {
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.water-gauge-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.water-gauge {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#bath-level {
+    width: 100%;
+    display: block;
+    height: 100%;
+    max-height: calc(var(--waterLevel) - 4px);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background-color: #0061ff;
+    z-index: 0;
+}
+
+#house-wrap .water-gauge-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    width: 52%;
+    left: 27%;
+}
+
+#house-wrap .water-gauge-content {
+    width: 100%;
+}
+
+/* Temperature gauge */
+.temperature-gauge-wrapper {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.temperature-gauge-content {
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-height: 200px;
+}
+
+.temperature-gauge {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+}
+
+#temp-level {
+    width: 41%;
+    display: block;
+    height: 100%;
+    max-height: calc(var(--temperatureLevel) - 27%);
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    background-color: red;
+    z-index: 0;
+    transform: translate(-59%, 0);
+}
+
+#house-wrap .temperature-gauge-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    top: 27%;
+    height: 38%;
+    left: 22%;
+}
+
+#house-wrap .temperature-gauge-content {
+    width: 100%;
+}
+
+#house-wrap #temp-level {
+    width: 7%;
+    display: block;
+    height: 100%;
+    max-height: calc(var(--temperatureLevel) - 27%);
+    position: absolute;
+    bottom: 26%;
+    left: 11%;
+    background-color: red;
+    z-index: 0;
+}
+
+/* House styles */
+#house-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    background: url(../images/house-scene.svg) no-repeat center;
+    background-size: cover;
+}
+
+.room-wrap {
+    width: 79%;
+    height: 58%;
+    margin-top: 42%;
+    margin-left: 3%;
+    position: relative;
+}
+
+.room {
+    position: absolute;
+    border: 1px solid red;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+#bedroom {
+    bottom: 0;
+    left: 0;
+}
+
+#bathroom {
+    top: 0;
+    left: 0;
+}
+
+#garage {
+    bottom: 0;
+    right: 0;
+}
+
+#livingroom {
+    top: 0;
+    right: 0;
+}

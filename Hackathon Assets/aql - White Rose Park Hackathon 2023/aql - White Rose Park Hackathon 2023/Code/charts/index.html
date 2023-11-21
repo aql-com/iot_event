@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Charts - aql / White Rose Park Hackathon 2023</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.js"></script>   
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="importmap">
+            {
+                "imports": {
+					"three-v140": "https://unpkg.com/three@0.140.0/build/three.module.js"
+                }
+            }
+        </script>   
+	</head>
+	<body class="m-0">
+		<header class="relative overflow-hidden h-[350px]">
+			<div id="js-header-canvas" class="absolute w-full h-full"></div>
+			<div class="absolute w-full h-full">
+				<div class="flex items-center justify-center w-full h-full">
+					<img src="images/logo.svg" width="628" height="215">
+				</div>
+			</div>
+		</header>
+		<script type="module" src="js/main.js"></script>
+		<main id="daleslandnet" class="relative max-w-[1280px] mx-auto">
+			<div class="mt-[30px] text-sm text-[#4E5862]">
+				<label class="block mb-1">Granularity:</label>
+				<select id="js-granularity-select" class="form-control bg-white rounded-[10px] font-medium w-full lg:w-auto truncate border border-[#C5C5C5] py-[6px] pr-[50px] pl-[8px] mt-[2px]">
+					<option value="hour">Hour</option>
+					<option value="half_hour">Half hour</option>
+					<option value="quarter_hour">Quarter hour</option>
+				</select>
+			</div>
+			<div id="js-chart-wrapper" class="my-[60px] flex gap-y-[60px] flex-wrap items-center justify-between"></div>
+		</main>
+		<footer class="flex flex-col text-[#707070] font-sans mb-[20px]">
+			<p class="flex justify-center text-[14px]"><a class="text-[#2869B0] font-bold hover:underline" href="https://core.aql.com" target="_blank">aql Core</a></p>
+			<p class="flex justify-center text-[13px]">Salem Chapel, Hunslet Road, Leeds LS10 1JW</p>
+			<p class="flex justify-center text-[13px]"><a href="tel:01133203040" class="hover:underline">0113 320 3040</a></p>
+			<p class="flex justify-center text-[13px]">© aql 2023</p>
+		</footer>
+	</body>
+</html>
