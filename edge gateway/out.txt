@@ -1,0 +1,29 @@
+Python requirements from D:\ESP32\esp-idf\requirements.txt are satisfied.
+[1/8] Performing build step for 'bootloader'
+ninja: no work to do.
+[2/6] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/MAC_Rpt_wifi.cpp.obj
+In file included from ../main/config.h:10,
+                 from ../main/MAC_Rpt.h:39,
+                 from ../main/MAC_Rpt_wifi.cpp:28:
+../main/Customer_h/MAC_Rpt_Wifi_Sniffer_01.h:14:2: warning: #warning "USING BUILD SETTINGS FROM MAC_Rpt_Wifi_Sniffer_01.h" [-Wcpp]
+ #warning "USING BUILD SETTINGS FROM MAC_Rpt_Wifi_Sniffer_01.h"
+  ^~~~~~~
+../main/MAC_Rpt_wifi.cpp:87:1: warning: missing initializer for member 'wifi_ap_config_t::ssid' [-Wmissing-field-initializers]
+ };
+ ^
+../main/MAC_Rpt_wifi.cpp:87:1: warning: missing initializer for member 'wifi_ap_config_t::password' [-Wmissing-field-initializers]
+../main/MAC_Rpt_wifi.cpp:87:1: warning: missing initializer for member 'wifi_ap_config_t::ssid_hidden' [-Wmissing-field-initializers]
+[3/6] Linking CXX static library esp-idf\main\libmain.a
+[4/6] Generating ld/esp32.project.ld
+[5/6] Linking CXX executable MAC_Rpt.elf
+[6/6] Generating binary image from built executable
+esptool.py v2.8
+Generated F:/Projects/FDT/MAC_Report/AQL_Code_GIT/sample_code/build/MAC_Rpt.bin
+Checking Python dependencies...
+Executing action: all (aliases: build)
+Running ninja in directory f:\projects\fdt\mac_report\aql_code_git\sample_code\build
+Executing "ninja all"...
+
+Project build complete. To flash, run this command:
+D:\ESP32\.espressif\python_env\idf4.0_py3.7_env\Scripts\python.exe D:\ESP32\esp-idf\components\esptool_py\esptool\esptool.py -p (PORT) -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size detect --flash_freq 40m 0x1000 build\bootloader\bootloader.bin 0x8000 build\partition_table\partition-table.bin 0xd000 build\ota_data_initial.bin 0x10000 build\MAC_Rpt.bin
+or run 'idf.py -p (PORT) flash'
