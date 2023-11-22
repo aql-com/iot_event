@@ -436,6 +436,9 @@ static esp_err_t POT_get_handler(httpd_req_t *req)
 {
 	char resp_str[2000];
 	char tmpstr[200];
+    char mac_str[20];
+    uint8_t mac_addr[6];
+
 	unsigned char i;
 
 //    char*  buf;
@@ -448,6 +451,7 @@ static esp_err_t POT_get_handler(httpd_req_t *req)
     httpd_resp_set_hdr(req, "POTval", "99");
     httpd_resp_set_type(req, "text/xml");
 
+ 
 
     /* Send response with custom headers and body set as the
      * string passed in user context*/
@@ -459,7 +463,10 @@ static esp_err_t POT_get_handler(httpd_req_t *req)
 	sprintf(tmpstr,"<tst>%d</tst>",testvar++);
 	strcat(resp_str,tmpstr);
 
-	sprintf(tmpstr,"<uid>%s</uid>",(char*)wifi_config_ap.sta.ssid);
+    esp_read_mac(mac_addr,ESP_MAC_WIFI_SOFTAP);
+	mac_to_str(mac_addr, '-', mac_str);
+
+	sprintf(tmpstr,"<uid>%s</uid>",(char*)mac_str);
 	strcat(resp_str,tmpstr);
 
 	sprintf(tmpstr,"<time>%s  %02d:%02d:%02d</time>",days_of_week[day_of_week],hrs,mins,secs);
