@@ -31,7 +31,7 @@ const char indexpageCode[6500] = {
     <h3>\
   <form>\
 	<table>\
-	<tr><td style='width: 120px'>Unit ID:</td><td></td><td><span id=\"uid\"> </span></td></tr>\
+	<tr><td style='width: 120px'>Mac Address:</td><td></td><td><span id=\"uid\"> </span></td></tr>\
 	<tr><td>Unit Time:</td><td></td><td><span id=\"utime\"> </span></td></tr>\
 	</table></h3>\
     <br><h4>\
