@@ -53,7 +53,7 @@
 #define USE_M4G_MQTT			// 4G comms over MQTT
 #define USE_M4G_MQTT_SSL
 
-#define USE_WIFI_MQTT		// FOR wifi MQTT
+//#define USE_WIFI_MQTT		// FOR wifi MQTT
 
 #define AQL_SERVER
 //#define SSS_SERVER
@@ -81,7 +81,7 @@
 #define WIFI_STA_PREFIX		"default_SSID"
 #define WIFI_STA_PASSWORD	"defaut_PWD"
 
-#define WIFI_AP_PREFIX		"MACRPT-A-"
+#define WIFI_AP_PREFIX		"iot-gateway-"
 #define WIFI_AP_PASSWORD	"password"
 
 #define PREFERRED_MQTT_MODE	MQTT_MODE_WIFI	// MQTT_MODE_NONE=0, MQTT_MODE_4G=1, MQTT_MODE_WIFI=2
