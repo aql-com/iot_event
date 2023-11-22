@@ -1,0 +1,14 @@
+/.vscode/
+.DS_Store
+sample_code/build/*
+!sample_code/build/.gitkeep
+/sample_code/build
+/sample_code/Boat Files
+/sample_code/NMEA_Data
+/sample_code/Proj
+/sample_code/South_Africa_Files
+/sample_code/SSL
+/sample_code/Test
+/sample_code/StackTrace
+/sample_code/Capture
+/sample_code/out.txt

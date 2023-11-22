@@ -1,0 +1,279 @@
+Touch Version 5.0 Copyright (c) 1995-2010 Embarcadero Technologies, Inc.
+
+Using COM port "com14"
+Python requirements from D:\ESP32\esp-idf\requirements.txt are satisfied.
+[0/1] Re-running CMake...
+-- mconf-idf version mconf-v4.6.0.0-idf-20190628-win32
+-- Project version: 6bd674c-dirty
+-- Building ESP-IDF components for target esp32
+-- Could NOT find Perl (missing: PERL_EXECUTABLE) 
+-- Adding linker script F:/Projects/FDT/MAC_Report/AQL_Code_GIT/sample_code/build/esp-idf/esp32/esp32_out.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp32/ld/esp32.project.ld.in
+-- Adding linker script D:/ESP32/esp-idf/components/esp32/ld/esp32.peripherals.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/ESP32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Components: app_trace app_update asio bootloader bootloader_support bt coap console cxx driver efuse esp-tls esp32 esp_adc_cal esp_common esp_eth esp_event esp_gdbstub esp_http_client esp_http_server esp_https_ota esp_https_server esp_local_ctrl esp_ringbuf esp_rom esp_websocket_client esp_wifi espcoredump esptool_py expat fatfs freemodbus freertos heap idf_test jsmn json libsodium log lwip main mbedtls mdns mqtt newlib nghttp nvs_flash openssl partition_table protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport tcpip_adapter ulp unity vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/ESP32/esp-idf/components/app_trace D:/ESP32/esp-idf/components/app_update D:/ESP32/esp-idf/components/asio D:/ESP32/esp-idf/components/bootloader D:/ESP32/esp-idf/components/bootloader_support D:/ESP32/esp-idf/components/bt D:/ESP32/esp-idf/components/coap D:/ESP32/esp-idf/components/console D:/ESP32/esp-idf/components/cxx D:/ESP32/esp-idf/components/driver D:/ESP32/esp-idf/components/efuse D:/ESP32/esp-idf/components/esp-tls D:/ESP32/esp-idf/components/esp32 D:/ESP32/esp-idf/components/esp_adc_cal D:/ESP32/esp-idf/components/esp_common D:/ESP32/esp-idf/components/esp_eth D:/ESP32/esp-idf/components/esp_event D:/ESP32/esp-idf/components/esp_gdbstub D:/ESP32/esp-idf/components/esp_http_client D:/ESP32/esp-idf/components/esp_http_server D:/ESP32/esp-idf/components/esp_https_ota D:/ESP32/esp-idf/components/esp_https_server D:/ESP32/esp-idf/components/esp_local_ctrl D:/ESP32/esp-idf/components/esp_ringbuf D:/ESP32/esp-idf/components/esp_rom D:/ESP32/esp-idf/components/esp_websocket_client D:/ESP32/esp-idf/components/esp_wifi D:/ESP32/esp-idf/components/espcoredump D:/ESP32/esp-idf/components/esptool_py D:/ESP32/esp-idf/components/expat D:/ESP32/esp-idf/components/fatfs D:/ESP32/esp-idf/components/freemodbus D:/ESP32/esp-idf/components/freertos D:/ESP32/esp-idf/components/heap D:/ESP32/esp-idf/components/idf_test D:/ESP32/esp-idf/components/jsmn D:/ESP32/esp-idf/components/json D:/ESP32/esp-idf/components/libsodium D:/ESP32/esp-idf/components/log D:/ESP32/esp-idf/components/lwip F:/Projects/FDT/MAC_Report/AQL_Code_GIT/sample_code/main D:/ESP32/esp-idf/components/mbedtls D:/ESP32/esp-idf/components/mdns D:/ESP32/esp-idf/components/mqtt D:/ESP32/esp-idf/components/newlib D:/ESP32/esp-idf/components/nghttp D:/ESP32/esp-idf/components/nvs_flash D:/ESP32/esp-idf/components/openssl D:/ESP32/esp-idf/components/partition_table D:/ESP32/esp-idf/components/protobuf-c D:/ESP32/esp-idf/components/protocomm D:/ESP32/esp-idf/components/pthread D:/ESP32/esp-idf/components/sdmmc D:/ESP32/esp-idf/components/soc D:/ESP32/esp-idf/components/spi_flash D:/ESP32/esp-idf/components/spiffs D:/ESP32/esp-idf/components/tcp_transport D:/ESP32/esp-idf/components/tcpip_adapter D:/ESP32/esp-idf/components/ulp D:/ESP32/esp-idf/components/unity D:/ESP32/esp-idf/components/vfs D:/ESP32/esp-idf/components/wear_levelling D:/ESP32/esp-idf/components/wifi_provisioning D:/ESP32/esp-idf/components/wpa_supplicant D:/ESP32/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: F:/Projects/FDT/MAC_Report/AQL_Code_GIT/sample_code/build
+[1/10] Performing build step for 'bootloader'
+ninja: no work to do.
+[2/8] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_app_desc.c.obj
+[3/8] Linking CXX static library esp-idf\app_update\libapp_update.a
+[4/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/MAC_Rpt_rtns.cpp.obj
+In file included from ../main/config.h:10,
+                 from ../main/MAC_Rpt.h:41,
+                 from ../main/MAC_Rpt_rtns.cpp:31:
+../main/Customer_h/MAC_Rpt_Lift_Demo_01.h:14:2: warning: #warning "USING BUILD SETTINGS FROM MAC_Rpt_Lift Demo_01.h" [-Wcpp]
+ #warning "USING BUILD SETTINGS FROM MAC_Rpt_Lift Demo_01.h"
+  ^~~~~~~
+In file included from ../main/Customer_h/MAC_Rpt_Lift_Demo_01.h:116,
+                 from ../main/config.h:10,
+                 from ../main/MAC_Rpt.h:41,
+                 from ../main/MAC_Rpt_rtns.cpp:31:
+../main/Customer_h/../PinDefs/V1_0_D_Pins.h:14:2: warning: #warning "USING V1_0_D Pin definitions" [-Wcpp]
+ #warning "USING V1_0_D Pin definitions"
+  ^~~~~~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char cli(unsigned char*)':
+../main/MAC_Rpt_rtns.cpp:1339:17: warning: unused variable 'n' [-Wunused-variable]
+    unsigned int n;
+                 ^
+../main/MAC_Rpt_rtns.cpp:1340:9: warning: unused variable 'tmpstr' [-Wunused-variable]
+    char tmpstr[10];
+         ^~~~~~
+../main/MAC_Rpt_rtns.cpp:614:6: warning: unused variable 'c' [-Wunused-variable]
+ char c;
+      ^
+../main/MAC_Rpt_rtns.cpp:620:15: warning: unused variable 'param' [-Wunused-variable]
+ unsigned char param;
+               ^~~~~
+../main/MAC_Rpt_rtns.cpp:623:9: warning: unused variable 'mac_addr' [-Wunused-variable]
+ uint8_t mac_addr;
+         ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:626:21: warning: unused variable 'y' [-Wunused-variable]
+ unsigned int ival,x,y;
+                     ^
+../main/MAC_Rpt_rtns.cpp: In function 'void show_inf(unsigned char)':
+../main/MAC_Rpt_rtns.cpp:2080:15: warning: unused variable 'pcb_ver_str' [-Wunused-variable]
+ unsigned char pcb_ver_str[15];
+               ^~~~~~~~~~~
+../main/MAC_Rpt_rtns.cpp:2081:10: warning: unused variable 'bt_mac_str' [-Wunused-variable]
+ uint8_t* bt_mac_str;
+          ^~~~~~~~~~
+../main/MAC_Rpt_rtns.cpp: In function 'int get_uart_rx_msg(unsigned char, unsigned char*, unsigned int, unsigned char)':
+../main/MAC_Rpt_rtns.cpp:2148:15: warning: unused variable 'i' [-Wunused-variable]
+ unsigned char i,j;
+               ^
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char debug_hex_msg(uint8_t*, unsigned int, char*)':
+../main/MAC_Rpt_rtns.cpp:2779:17: warning: unused variable 'i' [-Wunused-variable]
+ unsigned char c,i;
+                 ^
+../main/MAC_Rpt_rtns.cpp: In function 'esp_err_t i2c_master_read_slave(i2c_port_t, unsigned char, unsigned char, uint8_t*, size_t)':
+../main/MAC_Rpt_rtns.cpp:2852:13: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  signed int err;
+             ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'esp_err_t i2c_master_write_slave(i2c_port_t, unsigned char, unsigned char, uint8_t*, size_t)':
+../main/MAC_Rpt_rtns.cpp:2895:13: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  signed int err;
+             ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char listmatch(unsigned int, unsigned char, char*, char*, unsigned char, unsigned char)':
+../main/MAC_Rpt_rtns.cpp:3159:15: warning: unused variable 'j' [-Wunused-variable]
+ unsigned char j,n,x,elen,llen;
+               ^
+../main/MAC_Rpt_rtns.cpp:3159:19: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+ unsigned char j,n,x,elen,llen;
+                   ^
+../main/MAC_Rpt_rtns.cpp:3161:6: warning: unused variable 'tmpstr1' [-Wunused-variable]
+ char tmpstr1[entrylen+1];
+      ^~~~~~~
+../main/MAC_Rpt_rtns.cpp:3162:6: warning: unused variable 'tmpstr2' [-Wunused-variable]
+ char tmpstr2[entrylen+1];
+      ^~~~~~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char asc2hex(unsigned char*)':
+../main/MAC_Rpt_rtns.cpp:3450:15: warning: unused variable 'result' [-Wunused-variable]
+ unsigned char result,c,val;
+               ^~~~~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char nvs_gw_var_init()':
+../main/MAC_Rpt_rtns.cpp:3480:15: warning: unused variable 'var' [-Wunused-variable]
+ unsigned char var = 0xFF;
+               ^~~
+../main/MAC_Rpt_rtns.cpp:3481:14: warning: unused variable 'ivar' [-Wunused-variable]
+ unsigned int ivar;
+              ^~~~
+../main/MAC_Rpt_rtns.cpp:3482:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3483:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3484:15: warning: unused variable 'i' [-Wunused-variable]
+ unsigned char i,j;
+               ^
+../main/MAC_Rpt_rtns.cpp:3484:17: warning: unused variable 'j' [-Wunused-variable]
+ unsigned char i,j;
+                 ^
+../main/MAC_Rpt_rtns.cpp:3485:14: warning: unused variable 'n' [-Wunused-variable]
+ unsigned int n;
+              ^
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char set_gw_vars_from_nvs()':
+../main/MAC_Rpt_rtns.cpp:3528:15: warning: unused variable 'var' [-Wunused-variable]
+ unsigned char var = 0xFF;
+               ^~~
+../main/MAC_Rpt_rtns.cpp:3529:14: warning: unused variable 'ivar' [-Wunused-variable]
+ unsigned int ivar;
+              ^~~~
+../main/MAC_Rpt_rtns.cpp:3530:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3531:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3532:17: warning: unused variable 'j' [-Wunused-variable]
+ unsigned char i,j;
+                 ^
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char nvs_bl_var_init(char*, char*, char*, char*, unsigned char, unsigned int, unsigned char)':
+../main/MAC_Rpt_rtns.cpp:3590:18: warning: unused variable 'num' [-Wunused-variable]
+ unsigned char i, num;
+                  ^~~
+../main/MAC_Rpt_rtns.cpp:3596:11: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+ esp_err_t err;
+           ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char set_bl_vars_from_nvs(char*, char*, char*, char*, unsigned int*, unsigned int, unsigned char)':
+../main/MAC_Rpt_rtns.cpp:3650:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3653:11: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+ esp_err_t err;
+           ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char nvs_evt_var_init()':
+../main/MAC_Rpt_rtns.cpp:3694:18: warning: unused variable 'num' [-Wunused-variable]
+ unsigned char i, num;
+                  ^~~
+../main/MAC_Rpt_rtns.cpp:3695:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3697:6: warning: unused variable 'str' [-Wunused-variable]
+ char str[80];
+      ^~~
+../main/MAC_Rpt_rtns.cpp:3698:15: warning: unused variable 'buflen' [-Wunused-variable]
+ unsigned char buflen;
+               ^~~~~~
+../main/MAC_Rpt_rtns.cpp:3700:11: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+ esp_err_t err;
+           ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char set_evt_vars_from_nvs()':
+../main/MAC_Rpt_rtns.cpp:3759:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3760:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3761:6: warning: unused variable 'str' [-Wunused-variable]
+ char str[80];
+      ^~~
+../main/MAC_Rpt_rtns.cpp:3762:15: warning: unused variable 'buflen' [-Wunused-variable]
+ unsigned char buflen;
+               ^~~~~~
+../main/MAC_Rpt_rtns.cpp:3763:11: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+ esp_err_t err;
+           ^~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char nvs_srvr_addr_port_var_init()':
+../main/MAC_Rpt_rtns.cpp:3838:15: warning: unused variable 'var' [-Wunused-variable]
+ unsigned char var = 0xFF;
+               ^~~
+../main/MAC_Rpt_rtns.cpp:3839:14: warning: unused variable 'ivar' [-Wunused-variable]
+ unsigned int ivar;
+              ^~~~
+../main/MAC_Rpt_rtns.cpp:3840:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3841:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3842:15: warning: unused variable 'i' [-Wunused-variable]
+ unsigned char i,j;
+               ^
+../main/MAC_Rpt_rtns.cpp:3842:17: warning: unused variable 'j' [-Wunused-variable]
+ unsigned char i,j;
+                 ^
+../main/MAC_Rpt_rtns.cpp:3843:14: warning: unused variable 'n' [-Wunused-variable]
+ unsigned int n;
+              ^
+../main/MAC_Rpt_rtns.cpp:3845:6: warning: unused variable 'tmpstr' [-Wunused-variable]
+ char tmpstr[10] = {0x0A,0x00};
+      ^~~~~~
+../main/MAC_Rpt_rtns.cpp: In function 'unsigned char set_srvr_addr_port_vars_from_nvs()':
+../main/MAC_Rpt_rtns.cpp:3873:15: warning: unused variable 'var' [-Wunused-variable]
+ unsigned char var = 0xFF;
+               ^~~
+../main/MAC_Rpt_rtns.cpp:3874:14: warning: unused variable 'ivar' [-Wunused-variable]
+ unsigned int ivar;
+              ^~~~
+../main/MAC_Rpt_rtns.cpp:3875:24: warning: unused variable 'lvar' [-Wunused-variable]
+ unsigned long long int lvar = 0;
+                        ^~~~
+../main/MAC_Rpt_rtns.cpp:3876:15: warning: unused variable 'mac_list' [-Wunused-variable]
+ unsigned char mac_list[6];
+               ^~~~~~~~
+../main/MAC_Rpt_rtns.cpp:3877:15: warning: unused variable 'i' [-Wunused-variable]
+ unsigned char i,j;
+               ^
+../main/MAC_Rpt_rtns.cpp:3877:17: warning: unused variable 'j' [-Wunused-variable]
+ unsigned char i,j;
+                 ^
+../main/MAC_Rpt_rtns.cpp:3878:14: warning: unused variable 'n' [-Wunused-variable]
+ unsigned int n;
+              ^
+../main/MAC_Rpt_rtns.cpp: In function 'esp_err_t check_i2c_devices_present()':
+../main/MAC_Rpt_rtns.cpp:4060:15: warning: unused variable 'data' [-Wunused-variable]
+ unsigned char data;
+               ^~~~
+[5/8] Linking CXX static library esp-idf\main\libmain.a
+[6/8] Generating ld/esp32.project.ld
+[7/8] Linking CXX executable MAC_Rpt.elf
+[8/8] Generating binary image from built executable
+esptool.py v2.8
+Generated F:/Projects/FDT/MAC_Report/AQL_Code_GIT/sample_code/build/MAC_Rpt.bin
+esptool.py -p com14 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin 0x1000 bootloader/bootloader.bin 0x10000 MAC_Rpt.bin
+esptool.py v2.8
+Serial port com14
+Connecting........___
+Detecting chip type... ESP32
+Chip is ESP32D0WDQ5 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 40:f5:20:a1:41:c8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Compressed 3072 bytes to 156...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (156 compressed) at 0x00008000 in 0.0 seconds (effective 3512.9 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.0 seconds (effective 13116.9 kbit/s)...
+Hash of data verified.
+Compressed 25472 bytes to 15009...
+Writing at 0x00001000... (100 %)Wrote 25472 bytes (15009 compressed) at 0x00001000 in 0.3 seconds (effective 599.7 kbit/s)...
+Hash of data verified.
+Compressed 761648 bytes to 466039...
+Writing at 0x00010000... (3 %)Writing at 0x00014000... (6 %)Writing at 0x00018000... (10 %)Writing at 0x0001c000... (13 %)Writing at 0x00020000... (17 %)Writing at 0x00024000... (20 %)Writing at 0x00028000... (24 %)Writing at 0x0002c000... (27 %)Writing at 0x00030000... (31 %)Writing at 0x00034000... (34 %)Writing at 0x00038000... (37 %)Writing at 0x0003c000... (41 %)Writing at 0x00040000... (44 %)Writing at 0x00044000... (48 %)Writing at 0x00048000... (51 %)Writing at 0x0004c000... (55 %)Writing at 0x00050000... (58 %)Writing at 0x00054000... (62 %)Writing at 0x00058000... (65 %)Writing at 0x0005c000... (68 %)Writing at 0x00060000... (72 %)Writing at 0x00064000... (75 %)Writing at 0x00068000... (79 %)Writing at 0x0006c000... (82 %)Writing at 0x00070000... (86 %)Writing at 0x00074000... (89 %)Writing at 0x00078000... (93 %)Writing at 0x0007c000... (96 %)Writing at 0x00080000... (100 %)Wrote 761648 bytes (466039 compressed) at 0x00010000 in 11.5 seconds (effective 528.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+Checking Python dependencies...
+Adding flash's dependency "all" to list of actions
+Executing action: all (aliases: build)
+Running ninja in directory f:\projects\fdt\mac_report\aql_code_git\sample_code\build
+Executing "ninja all"...
+Executing action: flash
+Running esptool.py in directory f:\projects\fdt\mac_report\aql_code_git\sample_code\build
+Executing "D:\ESP32\.espressif\python_env\idf4.0_py3.7_env\Scripts\python.exe D:\ESP32\esp-idf\components/esptool_py/esptool/esptool.py -p com14 -b 460800 --before default_reset --after hard_reset write_flash @flash_project_args"...
+Done

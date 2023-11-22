@@ -1,0 +1,5 @@
+MAC Report project:
+
+a) bootloader.bin	at	0x1000		(found in build\bootloader folder)
+b) partition-table.bin	at	0x8000		(found in build\partition-table folder)
+c) <application>.bin	at 	0x10000		(found in build folder)

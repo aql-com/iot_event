@@ -1,0 +1,16 @@
+GPIO, TXD1, number,26, set to mode, OUTPUT, initial value,1
+GPIO, RXD1, number,33, set to mode, INPUT,,
+GPIO, CTS1, number,27, set to mode, INPUT,,
+GPIO, TXD2, number,23, set to mode, OUTPUT, initial value,1
+GPIO, RXD2, number,22, set to mode, INPUT,,
+GPIO, CTS2, number,19, set to mode, OUTPUT, initial value,0
+GPIO, DTR2, number,2, set to mode, OUTPUT, initial value,0
+GPIO, STATUS, number,25, set to mode, INPUT,,
+GPIO, LORA_MISO, number,13, set to mode, INPUT,,
+GPIO, LORA_MOSI, number,12, set to mode, OUTPUT, initial value,0
+GPIO, LORA_SCK, number,14, set to mode, OUTPUT, initial value,0
+GPIO, LORA_NSS, number,15, set to mode, OUTPUT, initial value,1
+GPIO, SR_DATA, number,4, set to mode, OUTPUT, initial value,0
+GPIO, SR_CLK, number,5, set to mode, OUTPUT, initial value,0
+GPIO, SR_STB, number,0, set to mode, OUTPUT, initial value,0
+GPIO, LIFT_DEMO_PWM, number,18, set to mode, OUTPUT, initial value,0
