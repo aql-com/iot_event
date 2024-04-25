@@ -1,0 +1,8 @@
+services:
+  python-app:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NAME=World
+    command: ["python", "hello.py"] # Default script to run

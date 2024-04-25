@@ -1,0 +1,7 @@
+docker-compose run python-app python hello.py
+docker-compose run python-app python challenge10.py
+docker-compose run python-app python challenge11.py
+docker-compose run python-app python challenge12.py
+
+
+
