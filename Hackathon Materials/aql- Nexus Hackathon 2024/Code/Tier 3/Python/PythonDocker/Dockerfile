@@ -11,7 +11,7 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy all Python files from the host's hackathon.js folder into the container's /app folder
-COPY hackathon/*.py /app/
+COPY *.py /app/
 
 # Default command to run when the container starts
 CMD ["python", "hello.py"]
