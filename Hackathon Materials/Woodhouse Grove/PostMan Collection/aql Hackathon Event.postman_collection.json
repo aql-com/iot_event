@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "7f87b985-9e13-48e2-aa79-ab209a4ef517",
+		"name": "aql Hackathon Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12735640"
+	},
+	"item": [
+		{
+			"name": "Add Sensor Reading",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Bearer}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readings\": [1,2,3,4]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.core.aql.com/v1/sensors/{{SensorID}}/add-reading",
+					"protocol": "https",
+					"host": [
+						"api",
+						"core",
+						"aql",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sensors",
+						"{{SensorID}}",
+						"add-reading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Device Reading",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Bearer}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"readings\": [\r\n        {\r\n            \"temp\": 25\r\n        },\r\n        {\r\n            \"temp\": 30\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.core.aql.com/v1/devices/{{DeviceID}}/add-reading",
+					"protocol": "https",
+					"host": [
+						"api",
+						"core",
+						"aql",
+						"com"
+					],
+					"path": [
+						"v1",
+						"devices",
+						"{{DeviceID}}",
+						"add-reading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Readings",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{Bearer}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sensor_ids\": [\r\n          \"{{SensorID}}\"\r\n    ],\r\n    \"startDate\":  \"2024-03-01 00:00:00\",\r\n    \"endDate\":  \"2024-04-26 00:00:00\",\r\n    \"sampleInterval\": \"Hour\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.core.aql.com/v1/sensors/sensor-data/aggregate/ave",
+					"protocol": "https",
+					"host": [
+						"api",
+						"core",
+						"aql",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sensors",
+						"sensor-data",
+						"aggregate",
+						"ave"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,5 @@
+services:
+  node:
+    build: .
+    container_name: hackathon
+    restart: always

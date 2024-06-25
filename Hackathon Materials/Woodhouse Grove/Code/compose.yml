@@ -1,0 +1,12 @@
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./hackathon:/app
+    environment:
+      - NAME=World
+    command: ["python", "hello.py"] # Default script to run
