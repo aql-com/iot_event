@@ -1,0 +1,13 @@
+services:
+  hackathon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["node", "challenge5.js"]
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
+
+
+
